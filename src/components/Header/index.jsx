@@ -7,7 +7,7 @@ import IconButton from '@mui/material/IconButton';
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { IoGitCompareOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
-import Tooltip from '@mui/material/Tooltip';
+import Tooltip from '@mui/material/Tooltip';   
 import Navigation from './Navigation';
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
@@ -52,7 +52,7 @@ const Header = () => {
     <div className="container px-6 flex items-center justify-between">
         <div className="col1 flex items-center w-[30%] !pl-4">
             <Link to={"/"}>
-                <img src="/logo-1691412328.jpg" className="h-12 w-auto" alt="Logo" />
+                <img src="/tikishnutra_resized.png" className="h-12 w-auto" alt="Logo" />
             </Link>
         </div>
 
