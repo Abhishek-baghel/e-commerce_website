@@ -7,6 +7,12 @@ import AdsBannerSlider from '../../components/AdsBannerSlider';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import ProductsSlider from '../../components/ProductsSlider';
+import { Link } from 'react-router-dom';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
+import BlogItem from '../../components/BlogItem';
 
 const Home = () => {
     const [value, setValue] = useState(0);
@@ -24,7 +30,7 @@ const Home = () => {
                 <div className="container">
                     <div className="flex items-center justify-between">
                         <div className="leftSec">
-                            <h2 className='text-[20px] font-[600] !pl-2'>Popular Product</h2>
+                            <h2 className='text-[20px] font-[600] !pl-2'>Popular Products</h2>
                             <p className='text-[14px] font-[400] !pl-2'>Do not miss this current offers until the end of this month.</p>
                         </div>
 
@@ -50,15 +56,15 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <ProductsSlider items={5}/>
+                    <ProductsSlider items={6}/>
 
 
 
                 </div>
             </section>
 
-            <section className="!py-20 bg-white w-full min-h-[50px] !mt-0 !p-0">
-                <div className="container !pt-3 !pb-3 !pr-4 !pl-4">
+            <section className="!py-4 !pt-2 bg-white w-full min-h-[50px] !mt-0 !p-0">
+                <div className="container !pt-0 !pb-3 !pr-4 !pl-4">
                     <div className="freeShipping w-[80%] !m-auto !py-3 !p-4 border-2 border-[#ff5252] flex items-center
                         justify-between rounded-md !mb-11">
                         <div className="col1 flex items-center gap-4">
@@ -76,6 +82,44 @@ const Home = () => {
                     <AdsBannerSlider items={4} />
                 </div>
             </section>
+
+            <section className='py-5 !pt-0 bg-white' >
+                <div className='container'>
+                <h2 className='text-[20px] font-[600] !pl-2'>Latest Products</h2>
+                    <ProductsSlider items={6}/>
+                    <AdsBannerSlider items={3} />
+                </div>
+            </section>
+
+            <section className='py-5 !pt-7 bg-white' >
+                <div className='container'>
+                <h2 className='text-[20px] font-[600] !pl-2'>Featured Products</h2>
+                    <ProductsSlider items={6}/>
+                    <AdsBannerSlider items={3} />
+                    
+                </div>
+            </section>
+
+            <section className='py-5 !pt-0 bg-white blogSection' >
+                <div className='container'>
+                <h2 className='text-[20px] font-[600]  !pt-7 !pl-2'>From The Blog</h2>
+                    <Swiper
+                                        slidesPerView={3}
+                                        spaceBetween={10}
+                                        navigation={true}
+                                        modules={[Navigation]}
+                                        className="blogslider" /*sliderHome write in classname instead of mySwiper*/
+                                    >
+                                        <SwiperSlide><BlogItem/>
+                                            </SwiperSlide> </Swiper>
+                
+                </div>
+            </section>
+
+
+
+
+            
 
             <br /><br /><br /><br /><br /><br />
         </>

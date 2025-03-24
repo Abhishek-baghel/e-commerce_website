@@ -21,7 +21,7 @@ const Navigation = () => {
 
     return (
       <>
-        <nav className='py-2'>
+        <nav>
             <div className='container flex items-center justify-end gap-8'>
                 <div className='col_1 w-[20%]'>
                     <Button className="!text-black font-bold flex items-center gap-2 w-full"
@@ -37,7 +37,7 @@ const Navigation = () => {
                         {/* Home */}
                         <li className="list-none relative">
                             <Link to="/" className="link transition text-[14px] font-[500] hover:text-gray-500">
-                                <Button className="link transition !font-bold !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252]">
+                                <Button className="link transition !font-bold !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] !py-4">
                                     Home
                                 </Button>
                             </Link>
@@ -46,7 +46,7 @@ const Navigation = () => {
                         {/* Beauty */}
                         <li className="list-none relative"> 
                             <div className="link transition text-[14px] font-[500] hover:text-gray-500">
-                                <Button className="link transition !font-bold !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252]">
+                                <Button className="link transition !font-bold !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] !py-4">
                                     Beauty
                                 </Button>
                             </div>
@@ -113,7 +113,7 @@ const Navigation = () => {
                         {/* Skincare */}
                         <li className="list-none relative">
                             <Link to="/" className="link transition text-[14px] font-[500] hover:text-gray-500">
-                                <Button className="link transition !font-bold !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252]">
+                                <Button className="link transition !font-bold !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] !py-4">
                                     Skincare
                                 </Button>
                             </Link>
@@ -122,7 +122,7 @@ const Navigation = () => {
                         {/* Wellness */}
                         <li className="list-none relative">
                             <Link to="/" className="link transition text-[14px] font-[500] hover:text-gray-500">
-                                <Button className="link transition !font-bold !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252]">
+                                <Button className="link transition !font-bold !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] !py-4">
                                     Wellness
                                 </Button>
                             </Link>
@@ -131,7 +131,7 @@ const Navigation = () => {
                         {/* Fitness */}
                         <li className="list-none relative">
                             <Link to="/" className="link transition text-[14px] font-[500] hover:text-gray-500">
-                                <Button className="link transition !font-bold !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252]">
+                                <Button className="link transition !font-bold !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] !py-4">
                                     Fitness
                                 </Button>
                             </Link>
@@ -140,7 +140,7 @@ const Navigation = () => {
                         {/* Herbal */}
                         <li className="list-none relative">
                             <Link to="/" className="link transition text-[14px] font-[500] hover:text-gray-500">
-                                <Button className="link transition !font-bold !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252]">
+                                <Button className="link transition !font-bold !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] !py-4">
                                     Herbal
                                 </Button>
                             </Link>
@@ -149,7 +149,7 @@ const Navigation = () => {
                         {/* Ayurvedic */}
                         <li className="list-none relative">
                             <Link to="/" className="link transition text-[14px] font-[500] hover:text-gray-500">
-                                <Button className="link transition !font-bold !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252]">
+                                <Button className="link transition !font-bold !text-[rgba(0,0,0,0.8)] hover:!text-[#ff5252] !py-4">
                                     Ayurvedic
                                 </Button>
                             </Link>

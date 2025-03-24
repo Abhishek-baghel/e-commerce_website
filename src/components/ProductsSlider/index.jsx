@@ -7,7 +7,7 @@ import ProductItem from '../ProductItem';
 
 const ProductsSlider = (props) => {
     return (
-        <div className='productsSlider'>
+        <div className='productsSlider !py-3'>
             <Swiper
                 slidesPerView={props.items}
                 spaceBetween={10}
@@ -18,6 +18,41 @@ const ProductsSlider = (props) => {
                 <SwiperSlide>
                    <ProductItem/>
                 </SwiperSlide>
+
+                <SwiperSlide>
+                   <ProductItem/>
+                </SwiperSlide>
+                
+                <SwiperSlide>
+                   <ProductItem/>
+                </SwiperSlide>
+                
+                <SwiperSlide>
+                   <ProductItem/>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                   <ProductItem/>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                   <ProductItem/>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                   <ProductItem/>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                   <ProductItem/>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                   <ProductItem/>
+                </SwiperSlide>
+
+
+
             </Swiper>
         </div>
     );

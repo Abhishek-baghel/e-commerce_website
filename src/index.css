@@ -85,3 +85,5 @@ nav ul button:hover{background: none !important;}
 
 .MuiTabs-indicator{background-color : #ff5252 !important;}
 .MuiTabs-textColorPrimary .Mui-selected{color: #ff5252 !important;}
+
+.productsSlider .swiper-wrapper{padding: 15px; margin-left: -15px; margin-right: -15px; }
