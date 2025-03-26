@@ -13,6 +13,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import BlogItem from '../../components/BlogItem';
+import Footer from '../../components/Footer';
 
 const Home = () => {
     const [value, setValue] = useState(0);
@@ -100,28 +101,46 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className='py-5 !pt-0 bg-white blogSection' >
+            <section className='py-5 !pb-8 !pt-0 bg-white blogSection' >
                 <div className='container'>
-                <h2 className='text-[20px] font-[600]  !pt-7 !pl-2'>From The Blog</h2>
+                <h2 className='text-[20px] font-[600]  !pt-7  !pl-2'>From The Blog</h2>
                     <Swiper
-                                        slidesPerView={3}
-                                        spaceBetween={10}
+                                        slidesPerView={4}
+                                        spaceBetween={30}
                                         navigation={true}
                                         modules={[Navigation]}
-                                        className="blogslider" /*sliderHome write in classname instead of mySwiper*/
+                                        className="sliderHome" /*sliderHome write in classname instead of mySwiper*/
                                     >
                                         <SwiperSlide><BlogItem/>
-                                            </SwiperSlide> </Swiper>
+                                            </SwiperSlide>
+                                            
+                                            <SwiperSlide><BlogItem/>
+                                            </SwiperSlide>
+
+                                            <SwiperSlide><BlogItem/>
+                                            </SwiperSlide>    
+
+                                            <SwiperSlide><BlogItem/>
+                                            </SwiperSlide>
+
+                                            <SwiperSlide><BlogItem/>
+                                            </SwiperSlide>
+
+                                            <SwiperSlide><BlogItem/>
+                                            </SwiperSlide>
+                                            
+                                            
+                                            
+                                            
+                                             </Swiper>
+
+                                             <Footer/>
                 
                 </div>
             </section>
 
 
 
-
-            
-
-            <br /><br /><br /><br /><br /><br />
         </>
     );
 }
